@@ -1096,8 +1096,9 @@ var Utils;
 // ON PREMISE
 //var myserver = new Chat.ChatServer(/*nodePort*/80,/*nodeUsesHttps*/false, /*backendServer*/ "localhost",/*localServer*/"localhost",/*backendUsesHttps*/false,/*backendPrivateKey*/ "outsystemschatkey*._.'__ç",/*backendExtension*/ "aspx");
 // for HEROKU use these values
+var myserver = new Chat.ChatServer(process.env.PORT, false, "ctu.outsystemscloud.com", process.env.IP, false, "_*outsystemschatkey*_", "aspx");
 // process.env.PORT
 // process.env.IP
 // RED HAT OPEN SHIFT CONFIGURATION
-var myserver = new Chat.ChatServer(process.env.OPENSHIFT_NODEJS_PORT, false, "ctu.outsystemscloud.com", process.env.OPENSHIFT_NODEJS_IP, false, "_*outsystemschatkey*_", "aspx");
+//var myserver = new Chat.ChatServer(process.env.OPENSHIFT_NODEJS_PORT, false, "ctu.outsystemscloud.com", process.env.OPENSHIFT_NODEJS_IP, false, "_*outsystemschatkey*_", "aspx");
 //# sourceMappingURL=server.js.map
